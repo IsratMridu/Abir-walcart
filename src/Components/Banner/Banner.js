@@ -1,4 +1,6 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Carousel from 'react-bootstrap/Carousel';
 
 
 
@@ -19,7 +21,26 @@ const Banner = () => {
 
                 <div className='col-lg-6 col-md-6 col-12'>
                 
-                <img src="https://i.ibb.co/DKLDtjS/image-3.png" alt="image-3" className='w-100' />
+                {/* <img src="https://i.ibb.co/DKLDtjS/image-3.png" alt="image-3" className='w-100' /> */}
+
+                <Carousel fade>
+      <Carousel.Item>
+      <img src="https://i.ibb.co/DKLDtjS/image-3.png" alt="image-3" className='w-100' />
+      
+      </Carousel.Item>
+      <Carousel.Item>
+      <img src="https://i.ibb.co/DKLDtjS/image-3.png" alt="image-3" className='w-100' />
+
+      
+      </Carousel.Item>
+      <Carousel.Item>
+      <img src="https://i.ibb.co/DKLDtjS/image-3.png" alt="image-3" className='w-100' />
+
+      
+      </Carousel.Item>
+    </Carousel>
+
+
                 
 
                 </div>

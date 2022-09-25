@@ -1,6 +1,12 @@
 import React from 'react';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 const NavBar = () => {
+
+ 
     return (
         <div style={{backgroundColor: '#031424'}}>
             <div className='container'>
@@ -84,6 +90,80 @@ const NavBar = () => {
 
 
 </div>
+
+
+{/* Menu */}
+<div className='row px-4'>
+  <div className='col-md-2'>
+  <NavDropdown title="Top Categories" className='bg-danger text-white text-center fw-bold rounded-3 py-2 px-4' id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1" ></NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2" className='styles1'>
+                Laptop & Desktop
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3" className='styles1'>Home Living</NavDropdown.Item>
+              
+              <NavDropdown.Item href="#action/3.4" className='styles1'>
+                Book & Stationary
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4" className='styles1'>
+              Electronics Appliances
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4" className='styles1'>
+              Fast Food and Snacks
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4" className='styles1'>
+              More Categories
+              </NavDropdown.Item>
+            </NavDropdown>
+
+
+  </div>
+
+
+
+  <div className='col-md-7 d-flex text-whte justify-content-between '>
+  <NavDropdown title="Exclusive Deals" className=' text-white text-center fw-bold rounded-3 py-2 px-4' id="basic-nav-dropdown">
+              
+     </NavDropdown>
+
+  <NavDropdown title="Smart Watches" className=' text-white text-center fw-bold rounded-3 py-2 px-4' id="basic-nav-dropdown">
+              
+     </NavDropdown>
+
+  <NavDropdown title="Cell Phone" className=' text-white text-center fw-bold rounded-3 py-2 px-4' id="basic-nav-dropdown">
+              
+     </NavDropdown>
+
+  <NavDropdown title="Headphone" className=' text-white text-center fw-bold rounded-3 py-2 px-4' id="basic-nav-dropdown">
+              
+     </NavDropdown>
+
+  </div>
+
+  <div  className='col-md-3 d-flex justify-content-end'>
+<div className='me-2' style={{position: 'relative', top: '10px'}}>
+<img src="https://i.ibb.co/jyQc8Zg/Group.png" alt="Group" border="0" className='img-fluid'/>
+</div>
+<div className='ms-1 me-1'>
+  <span className='text-secondary'>
+  Only this weekend
+  </span>
+  <br/>
+  <span className='text-danger fw-bold' style={{fontSize: '16px'}}>
+  Super Discount
+  </span>
+</div>
+<div className='ms-3' style={{position: 'relative', top: '10px'}}>
+<img src="https://i.ibb.co/LzB9gGh/Vector-6.png" alt="Vector-6" border="0" className='w-100'/>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
 
             </div>
             
